@@ -29,6 +29,7 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: dimgray;
 }
 
 img {
@@ -241,6 +242,10 @@ footer {
   color: darkgray;
 }
 
+.project-titel:hover {
+  color: dimgray;
+}
+
 .project-toggle {
   display: inline-flex;
   transition: transform 0.2s ease;
@@ -327,6 +332,12 @@ footer {
 
 .about h1 {
   margin: var(--space-S) 0 var(--space-M);
+}
+
+.about a {
+  font-size: var(--fs-paragraph);
+  line-height: var(--lh-paragraph);
+  letter-spacing: var(--ls-paragraph);
 }
 
 /* =========================
