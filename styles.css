@@ -346,10 +346,10 @@ footer {
 
 .image-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   padding: 0 var(--space-M);
   margin-bottom: var(--space-L);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .image-row img {
@@ -358,14 +358,22 @@ footer {
   border-radius: 12px;
 }
 
-/* 1 Bild = 1 Spalte */
+/* 1 Bild: volle Breite, 16:9 */
 .image-row:has(img:only-child) {
   grid-template-columns: 1fr;
 }
 
-/* 2 Bilder = 2 Spalten */
+.image-row:has(img:only-child) img {
+  aspect-ratio: 16 / 9;
+}
+
+/* 2 Bilder: 2 Spalten, 1:1 */
 .image-row:has(img:nth-child(2):last-child) {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.image-row:has(img:nth-child(2):last-child) img {
+  aspect-ratio: 1 / 1;
 }
 
 /* =========================
