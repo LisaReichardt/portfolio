@@ -358,6 +358,16 @@ footer {
   border-radius: 12px;
 }
 
+/* 1 Bild = 1 Spalte */
+.image-row:has(img:only-child) {
+  grid-template-columns: 1fr;
+}
+
+/* 2 Bilder = 2 Spalten */
+.image-row:has(img:nth-child(2):last-child) {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 /* =========================
    MOBILE ADJUSTMENTS
 ========================= */
