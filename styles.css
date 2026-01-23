@@ -323,6 +323,34 @@ footer {
   border-radius: 0; /* ganz wichtig */
 }
 
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000; /* verhindert weißen Flash */
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Optionaler Hinweis unten rechts */
+.video-hint {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.75);
+  pointer-events: none;
+}
+
 /* =========================
    ABOUT PAGE
 ========================= */
@@ -465,5 +493,17 @@ footer {
     justify-content: flex-start;
     align-items: flex-start;
     row-gap: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .video-wrapper video {
+    display: none;
+  }
+
+  .video-wrapper {
+    background-image: url("video-poster.jpg");
+    background-size: cover;
+    background-position: center;
   }
 }
