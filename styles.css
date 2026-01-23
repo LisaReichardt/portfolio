@@ -303,6 +303,26 @@ footer {
   border-radius: 12px;
 }
 
+.project-gif {
+  margin-top: var(--space-M);
+  display: flex;
+  justify-content: center;
+}
+
+.gif-wrapper {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden; /* <-- HIER passiert das Clipping */
+}
+
+.gif-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0; /* ganz wichtig */
+}
+
 /* =========================
    ABOUT PAGE
 ========================= */
