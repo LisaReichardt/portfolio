@@ -336,12 +336,19 @@ img.is-visible {
 }
 
 video {
-  background: white;
   opacity: 0;
   transform: translateY(24px);
   transition:
     opacity 0.6s ease-out,
     transform 0.6s ease-out;
+}
+
+.video-mobile {
+  display: none;
+}
+
+.video-desktop {
+  display: block;
 }
 
 /* Sichtbar */
@@ -496,6 +503,14 @@ video.is-visible {
 
   .image-row {
     grid-template-columns: 1fr;
+  }
+
+  .video-mobile {
+    display: block;
+  }
+
+  .video-desktop {
+    display: none;
   }
 }
 
