@@ -343,14 +343,6 @@ video {
     transform 0.6s ease-out;
 }
 
-.video-mobile {
-  display: none;
-}
-
-.video-desktop {
-  display: block;
-}
-
 /* Sichtbar */
 video.is-visible {
   opacity: 1;
@@ -503,14 +495,6 @@ video.is-visible {
 
   .image-row {
     grid-template-columns: 1fr;
-  }
-
-  .video-mobile {
-    display: block;
-  }
-
-  .video-desktop {
-    display: none;
   }
 }
 
