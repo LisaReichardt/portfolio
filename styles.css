@@ -38,6 +38,10 @@ svg {
   flex-shrink: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* =========================
    DESIGN TOKENS – TYPOGRAPHY
 ========================= */
