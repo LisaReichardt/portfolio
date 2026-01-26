@@ -2,19 +2,29 @@
    RESET & BASE
 ========================= */
 
+@font-face {
+  font-family: "Geist Sans";
+  src: url("fonts/Geist-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-* {
-  font-weight: 500;
-}
 
 body {
   margin: 0;
-  font-family: "Geist", sans-serif;
+  font-family: "Geist Sans", sans-serif;
   font-weight: 500;
+  font-variant-ligatures: common-ligatures contextual;
+  font-feature-settings:
+    "liga" 1,
+    "clig" 1,
+    "calt" 1;
   color: black;
   background-color: white;
 }
