@@ -163,6 +163,8 @@ h2 {
   line-height: var(--lh-h2);
   letter-spacing: var(--ls-h2);
   margin: 0;
+  font-weight: 500;
+}
 }
 
 p {
@@ -170,12 +172,16 @@ p {
   line-height: var(--lh-paragraph);
   letter-spacing: var(--ls-paragraph);
   margin: 0 0 1em 0;
+  font-weight: 500;
+}
 }
 
 .caption {
   font-size: var(--fs-caption);
   line-height: var(--lh-caption);
   letter-spacing: var(--ls-caption);
+  font-weight: 500;
+}
 }
 
 svg {
