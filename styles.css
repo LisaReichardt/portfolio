@@ -341,7 +341,7 @@ footer {
   height: auto; /* wird von JS gesetzt */
 }
 
-/* Nur GIFs im Projekt #bread-soda minimal reinzoomen */
+/* Nur GIFs im Projekt #bread-soda minimal reinzoomen, um Rand von GIFs zu entfernen */
 #bread-soda .case-study-gifs img[src$=".gif"] {
   transform: scale(1.01); /* ggf. 1.005–1.02 feinjustieren */
   transform-origin: center;
@@ -350,6 +350,10 @@ footer {
 /* Clipping nur für diesen GIF-Wrapper */
 #bread-soda .case-study-gifs {
   overflow: hidden;
+}
+
+#meet-meeple .case-study-images {
+  border: 1px solid #f3f3f3;
 }
 
 img {
