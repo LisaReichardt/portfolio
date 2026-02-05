@@ -316,6 +316,42 @@ footer {
   border-radius: 12px;
 }
 
+.case-study-images {
+  margin-top: var(--space-M);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.case-study-images img {
+  aspect-ratio: auto;
+}
+
+.case-study-gifs {
+  display: inline-flex;
+  gap: 0;
+  max-width: 100%;
+}
+
+.case-study-gifs img {
+  display: block;
+  width: auto;
+  height: auto; /* wird von JS gesetzt */
+}
+
+/* Nur GIFs im Projekt #bread-soda minimal reinzoomen */
+#bread-soda .case-study-gifs img[src$=".gif"] {
+  transform: scale(1.01); /* ggf. 1.005–1.02 feinjustieren */
+  transform-origin: center;
+}
+
+/* Clipping nur für diesen GIF-Wrapper */
+#bread-soda .case-study-gifs {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
